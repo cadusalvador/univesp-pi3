@@ -4,6 +4,7 @@
 /* Creted on:     01/03/2024 20:50            */
 /*============================================*/
 
+USE reciclarja;
 
 /*==============================================================*/
 /* Table: usuarios                                              */
@@ -51,7 +52,7 @@ CREATE TABLE coleta
 	eletronico INTEGER,
 	status VARCHAR(10),
 	coletor_id INTEGER NOT NULL,
-	dataCadastro DATETIME NOT NULL
+	dataCadastro DATETIME NOT NULL,
 	PRIMARY KEY (id ASC),
 	CONSTRAINT fk_coletores FOREIGN KEY (coletor_id)
 			REFERENCES coletores (id)
